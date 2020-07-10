@@ -8,12 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="image/apple-icon-72x72.png" type="image/png">
     <title>Edit Pineda - SPA </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
     <!-- 
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     -->
     <!-- forma local -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link id="estilos" rel="stylesheet" href="css/styles.css" type="text/css">
+
 
 </head>
 
@@ -22,7 +27,7 @@
     <header>
 
         <div class="container text-center" style="margin-top: -5rem;">
-            <img src="img/ico/firma-logo.png" alt="EP SPA" style="text-align: center; max-width: 100%;">
+            <img src="img/ico/logo_edit.png" alt="EP SPA" style="text-align: center; max-width: 100%;">
         </div>
     </header>
     <div class="fixed-top">
@@ -36,35 +41,47 @@
                     <li>TRATAMIENTOS</li>
                     <li>CONTACT US</li>
                     <li>view feed back</li>
+                    <li>
+                        <span class="navbar-toggler-icon " style="color: black;"></span>
+                        <button onclick="mostrar()" id="mostrar" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation"><span class="text-dark">X</span></button>
+                    </li>
                 </ul>
             </div>
         </div>
         <nav class="navbar navbar-dark ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon " style ="color: black;"></span>
-          
-          </button>
+            <button class="navbar-toggler" id="show" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="ocultar()"> 
+                        <span class="navbar-toggler-icon " style="color: black;"></span>
+
+                        </button>
         </nav>
     </div>
 
 
 
     <img src="img/ico/topless-woman-lying-on-bed-getting-massage.jpg" alt="">
-    <h1>Masajes, y Terapias</h1>
-    <hr>
-    <p>
-        Lo mejor de los tratamientos corporales, faciales, y podologicos, todo esto en un solo lugar.
-    </p>
-    <p>
-        Tratamientos en los cuales se amasan, frotan, golpetean y se tocan suavemente los tejidos blandos del cuerpo (dependiendo de el tipo de requerimiento personal). La terapia de masaje puede ayudar a que las personas se relajen, alivien el estrés y el dolor,
-        bajen la presión arterial y mejoren la circulación sanguinea. Está comprobado que el tomar sesiones de masajes se reducen síntomas como; por ejemplo, la falta de energía, el dolor, la hinchazón y la depresión etre otros beneficios, ayudando al
-        cuerpo a a recuperarse de forma natural.
-    </p>
-    <hr>
-    <p>
-        Todo acerca de EditPinedaSpa
-    </p>
-    <hr>
+
+    <div class="sub-principal">
+        <div class="container txt-gaboedicion">
+            <h1>Masajes,</h1>
+            <h2>Y Cuidado personal</h2>
+
+            <hr>
+
+            <p>
+                Lo mejor de los tratamientos corporales, faciales, y podologicos, todo esto en un solo lugar.
+            </p>
+            <p>
+                Tratamientos en los cuales se amasan, frotan, golpetean y se tocan suavemente los tejidos blandos del cuerpo (dependiendo de el tipo de requerimiento personal). La terapia de masaje puede ayudar a que las personas se relajen, alivien el estrés y el dolor,
+                bajen la presión arterial y mejoren la circulación sanguinea. Está comprobado que el tomar sesiones de masajes se reducen síntomas como; por ejemplo, la falta de energía, el dolor, la hinchazón y la depresión etre otros beneficios, ayudando
+                al cuerpo a a recuperarse de forma natural.
+            </p>
+
+            <p class="text-center btn btn-block">
+                <span class="btn btn-outline-dark text-white bg-black"> Todo acerca de EditPinedaSpa</span>
+            </p>
+        </div>
+    </div>
+
     <h2>servicio 1</h2>
     <img src="img/ico/person-s-hands.jpg" alt="">
     <h3>Service type one</h3>
@@ -119,9 +136,9 @@
 
 
 
-
-
     <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/funciones.js"></script>
+
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
 </body>
