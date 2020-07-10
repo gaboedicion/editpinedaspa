@@ -1,11 +1,19 @@
 html {
     margin: 0;
     padding: 0;
+    font-family: 'Old Standard TT', serif;
+    font-family: 'Playfair Display', serif;
 }
+
+h1 {}
 
 body {
     background-color: #F6F5F4;
     color: black;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Old Standard TT', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 img {
@@ -40,16 +48,61 @@ header img {
     height: 1rem;
 }
 
+.hide {
+    display: none;
+}
+
+#show {
+    display: block;
+}
+
 .bg-dark {
     background-color: #F7E3DE!important;
     align-content: center;
     text-align: center;
+    height: 100vh !important;
+}
+
+.bg-dark ul li {
+    margin-top: 2rem;
+}
+
+.bg-dark ul li span {
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 .bg-dark ul,
 li {
     margin-left: -2rem !important;
     list-style: none;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    line-height: 1.8;
+    letter-spacing: 0em;
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Old Standard TT';
+    font-weight: 400;
+    font-style: normal;
+    padding: 1rem;
+}
+
+.txt-gaboedicion .bg-black {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.sub-principal {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    background-color: #F7E3DE;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(182, 181, 181, 0.808)), url("../img/ico/grayscale-photo-of-footprints-on-sand-1535402.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
 }
 
 @media only screen and (max-width: 400px) {
