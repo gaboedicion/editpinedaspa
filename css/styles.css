@@ -5,7 +5,9 @@ html {
     font-family: 'Playfair Display', serif;
 }
 
-h1 {}
+h1 {
+    color: rgb(0, 0, 0, 0.5);
+}
 
 body {
     background-color: #F6F5F4;
