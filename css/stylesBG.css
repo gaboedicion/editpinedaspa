@@ -1,14 +1,9 @@
-html {
-    background-color: rgba(0, 0, 0, 0.979);
-}
-
-@media only screen and (max-width: 769px) and (min-width:350px) {
+@media only screen and (min-width:770px) {
     html {
         margin: 0;
         padding: 0;
         font-family: 'Old Standard TT', serif;
         font-family: 'Playfair Display', serif;
-        background-color: rgba(0, 0, 0, 0.979);
     }
     h1 {
         color: rgb(0, 0, 0);
@@ -21,57 +16,56 @@ html {
         font-family: 'Old Standard TT', serif;
         font-family: 'Playfair Display', serif;
     }
-    .superior {
-        display: block;
-        background-image: url("../img/ico/logo-sup.png");
-        background-repeat: no-repeat;
-        max-width: 100%;
-        height: 20vh;
-        padding: 0;
-        margin-left: 0;
+    /* top */
+    .fixed-top {
+        display: none;
+    }
+    header {
+        padding-bottom: 4rem;
+        height: 35vh;
     }
     .logo {
-        padding-top: 2rem !important;
+        max-width: 50%;
+        padding-top: 1.5rem;
     }
     .logo img {
-        text-align: center;
-        max-width: 100%;
-        margin-top: -10rem;
+        display: block;
+        padding: 0 !important;
+        margin: 0 !important;
     }
+    /* fin top */
     /* img main */
     .img-main {
         display: block;
         flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: center;
         visibility: visible;
         z-index: 99;
         text-align: center;
     }
-    .img-main img:first-of-type {
-        display: none;
+    .img-main .no-raw {
+        max-height: 30vh;
+    }
+    .img-main .si-raw {
+        max-height: 30vh;
     }
     .img-main img {
-        display: inline-block;
+        display: inline-flex;
+        flex-wrap: nowrap;
         text-align: center;
         max-height: 60vh;
     }
-    .img-main img:last-child {
-        display: none;
+    /*fin img main */
+    .superior {
+        display: block;
+        background-image: url("../img/ico/logo-sup.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+        margin-left: 0;
     }
-    /*img fin main */
-    /*barra media */
-    .simple {
-        background-color: rgba(224, 200, 190, 0.5);
-        display: flex;
-        justify-content: center;
-        margin-top: 2rem;
-    }
-    .simple nav {
-        margin-top: 1rem;
-        display: none;
-        max-width: 100%;
-    }
-    /*fin barra media */
     .txt-bc {
         color: rgb(253, 251, 251);
         font-family: 'Old Standard TT', serif;
@@ -91,6 +85,38 @@ html {
     /*seccion medio */
     .simple {
         background-color: rgba(224, 200, 190, 0.5);
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .simple nav {
+        margin-top: 1rem;
+        display: inline-block;
+        max-width: 100%;
+    }
+    .simple nav ul {
+        display: flex;
+        max-width: 100%;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    .simple nav ul li:first-child {
+        margin-left: 2rem;
+    }
+    .simple nav ul li {
+        margin-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .simple nav ul li a {
+        color: rgba(10, 10, 10, 0.836);
+    }
+    .simple nav ul li a:hover {
+        color: rgba(71, 71, 71, 0.836);
+    }
+    .simple nav ul li span a {
+        font-size: 14px;
+        font-style: italic;
     }
     /*tarjetas medio */
     .card-body h5,
@@ -225,10 +251,6 @@ html {
         margin: 0 !important;
         border-radius: 0;
     }
-    header img {
-        width: 120vh;
-        /*width: 100%;*/
-    }
     .bn-sup {
         background-image: url("../img/ico/bn-sup.png");
         background-position-x: center;
@@ -293,5 +315,23 @@ html {
         background-repeat: no-repeat;
         background-position-x: center;
         background-size: cover;
+    }
+}
+
+@media only screen and (min-width:1410px) {
+    .img-main .no-raw {
+        max-height: 40vh;
+    }
+    .img-main .si-raw {
+        max-height: 50vh;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .img-main .no-raw {
+        max-height: 20vh;
+    }
+    .img-main .si-raw {
+        max-height: 30vh;
     }
 }
