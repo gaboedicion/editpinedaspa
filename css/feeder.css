@@ -1,0 +1,15 @@
+.adelante {
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.btn-flecha {
+    border-radius: 1%;
+    background-color: rgba(0, 0, 0, 0.041);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
