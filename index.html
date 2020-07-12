@@ -17,17 +17,19 @@
     -->
     <!-- forma local -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link id="estilos" rel="stylesheet" href="css/styles.css" type="text/css">
 
 
 </head>
 
 <body>
-    <img src="img/ico/bn-sup.png" alt="superior" style="">
+    <div class="superior"> </div>
+
     <header>
 
-        <div class="container text-center" style="margin-top: -5rem;">
-            <img src="img/ico/logo_edit.png" alt="EP SPA" style="text-align: center; max-width: 100%;">
+        <div class="container logo text-center" style="margin-top: -5rem;">
+            <img src="img/ico/logo_edit.png" alt="EP SPA" style="text-align: center; max-width: 100%; margin-top: -10rem;">
         </div>
     </header>
     <div class="fixed-top">
@@ -76,59 +78,133 @@
                 al cuerpo a a recuperarse de forma natural.
             </p>
 
-            <p class="text-center btn btn-block">
-                <span class="btn btn-outline-dark text-white bg-black"> Todo acerca de EditPinedaSpa</span>
-            </p>
+            <div class="text-center ">
+                <span class=" txt-bc caja-neg"> Todo sobre EditPinedaSpa</span>
+            </div>
         </div>
     </div>
+    <div class="simple">
+        menu
+    </div>
+    <!--Cards-->
+    <div class="container">
 
-    <h2>servicio 1</h2>
-    <img src="img/ico/person-s-hands.jpg" alt="">
-    <h3>Service type one</h3>
-    <hr>
-    <h2>servicio 2</h2>
-    <img src="img/ico/woman-in-black-leather-jacket-and-black-skirt-sitting-on.jpg" alt="">
 
-    <h3>Service type two</h3>
-    <hr>
-    <h2>servicio 3</h2>
-    <img src="img/ico/woman-doing-facial-mask.jpg" alt="">
-    <h3>Service type three</h3>
-    <hr>
-    <img src="img/ico/woman-in-black-scoop-neck-shirt-smiling-38554.jpg" alt="" style="border-radius: 50%; max-width: 50%; margin: 0;">
-    <h3>"I HAVE LOVED GOOD JOB"</h3>
-    <Section>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et ratione quaerat alias quam deserunt. Officiis exercitationem, distinctio magnam quis sapiente libero veniam iusto eos voluptatibus vel natus veritatis provident asperiores.
-    </Section>
-    <img src="img/ico/woman-wearing-coat-762020.jpg" alt="" style="border-radius: 50%; max-width: 50%; margin: 0;">
-    <h3>"I HAVE LOVED GOOD JOB"</h3>
-    <Section>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et ratione quaerat alias quam deserunt. Officiis exercitationem, distinctio magnam quis sapiente libero veniam iusto eos voluptatibus vel natus veritatis provident asperiores.
-    </Section>
-    <img src="img/ico/close-up-photo-of-woman-4673418.jpg" alt="" style="border-radius: 50%; max-width: 50%; margin: 0;">
-    <h3>"I HAVE LOVED GOOD JOB"</h3>
-    <Section>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et ratione quaerat alias quam deserunt. Officiis exercitationem, distinctio magnam quis sapiente libero veniam iusto eos voluptatibus vel natus veritatis provident asperiores.
-    </Section>
-    <hr>
-    <h2>Tratamientos que amamos</h2>
-    <img src="img/ico/topless-woman-lying-on-bed-getting-massage-3865796.jpg" alt="">
-    <img src="img/ico/person-doing-massage-3230236.jpg" alt="">
-    <p>
-        Nuestros clientes han sido principalmente de varios lugares del mundo como USA, México, Europa y todo Latino America.
-    </p>
+        <div class="card-group p-3">
+            <div class="card ">
+                <img src="img/ico/servicios1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title numero ">01.</h5>
+                    <p class="card-text text-center font-weight-bolder form-control-lg">SERVICE TYPE ONE</p>
 
-    <img src="img/ico/alone-buildings-city-cityscape-220444.jpg" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/ico/servicios2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">02.</h5>
+                    <p class="card-text text-center font-weight-bolder form-control-lg">SERVICE TYPE TWO</p>
 
-    <ul>
-        <li>GET IN TOUCH</li>
-        <li>READ THE BLOG</li>
-        <li>SERVICE DISCLAIMER</li>
-        <li>PRIVACY POLICY</li>
-    </ul>
-    <P>
-        &COPY; EDIT PINEDA SPA. ALL RIGHTS RESERVED.
-    </P>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/ico/servicios3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">03.</h5>
+                    <p class="card-text text-center font-weight-bolder form-control-lg">SERVICE TYPE THREE</p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Fin cards-->
+
+    </div>
+    <!-- carrusel de reviews -->
+    <div class="contenedor container text-center mt-5">
+        <div class="card">
+            <img src="img/ico/feed1.jpg" class="drop" alt="" id="imagen">
+            <div class="card-body">
+                <h4 class="card-title">I HAVE LOVED GOOD JOB</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <footer class="blockquote-footer">happy client, <cite title="Source Title"> adelaide sa</cite></footer>
+
+            </div>
+
+            <!--  
+                <div class="atras botones btn btn-outline-info">
+                    &#60
+                </div>
+              -->
+
+            <div class="adelante botones btn-flecha">
+
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- FIN carrusel de reviews -->
+
+    <!-- carrusel continuo -->
+    <div class="slider base">
+        <div class="card bg-dark text-white">
+            <img name="slider" class="card-img " src="" alt="">
+            <div class="card-img-overlay">
+                <h5 class="card-title superponer">Tratamientos que amamos</h5>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="colash">
+        <p>
+            Nuestros clientes han sido principalmente de varios lugares del mundo como USA, México, Europa y todo Latino America.
+        </p>
+
+        <img src="img/colash/colash1.jpg" alt="">
+        <img src="img/colash/colash2.jpg" alt="">
+        <img src="img/colash/colash3.jpg" alt="">
+        <img src="img/colash/colash4.jpg" alt="">
+
+        <nav class="sub-nav">
+            <ul>
+                <li>GET IN TOUCH</li>
+                <li>READ THE BLOG</li>
+                <li>SERVICE DISCLAIMER</li>
+                <li>PRIVACY POLICY</li>
+                <li class="bg-f"> - </li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+
+
+
+
+    <!-- 
+        <img src="img/slider/slider1.jpg" alt="">
+        <img src="img/slider/slider2.jpg" alt="">
+        <img src="img/slider/slider3.jpg" alt="">
+-->
+    <!-- fin carrusel continuo -->
+
+
+    <div class="footer">
+        <img src="img/ico/alone-buildings-city-cityscape-220444.jpg" alt="">
+
+
+        <P>
+            &COPY; EDIT PINEDA SPA. ALL RIGHTS RESERVED.
+        </P>
+        <p>
+            SPA - STUDIO
+        </p>
+
+    </div>
 
 
 
@@ -140,7 +216,7 @@
     <script src="js/funciones.js"></script>
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="js/slider.js"></script>
 </body>
 
 </html>
