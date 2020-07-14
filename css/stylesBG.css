@@ -1,4 +1,4 @@
-@media only screen and (min-width:770px) {
+@media only screen and (min-width:833px) {
     html {
         margin: 0;
         padding: 0;
@@ -15,6 +15,11 @@
         padding: 0 !important;
         font-family: 'Old Standard TT', serif;
         font-family: 'Playfair Display', serif;
+    }
+    img {
+        max-width: 100%;
+        margin: 0 !important;
+        border-radius: 0;
     }
     /* top */
     .fixed-top {
@@ -66,6 +71,18 @@
         padding: 0;
         margin-left: 0;
     }
+    .slider .text-white {
+        max-height: 55vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .slider .text-white img {
+        display: flex;
+        max-width: fit-content;
+        max-height: fit-content;
+        margin: 0;
+    }
     .txt-bc {
         color: rgb(253, 251, 251);
         font-family: 'Old Standard TT', serif;
@@ -83,11 +100,19 @@
         padding-bottom: 0.5rem;
     }
     /*seccion medio */
+    .abs {
+        display: block;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
     .simple {
         background-color: rgba(224, 200, 190, 0.5);
         display: flex;
         justify-content: center;
-        margin-top: 1rem;
+        margin-top: 0;
+        width: 100vw;
+        z-index: 999;
     }
     .simple nav {
         margin-top: 1rem;
@@ -126,14 +151,77 @@
         font-weight: 700;
         color: rgba(10, 10, 10, 0.836);
     }
+    /*contenido dinamico */
+    .contenedor-medio {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .slider-contenedor {
+        max-width: 100%;
+        display: flex;
+    }
+    .contenido-slider {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        background-image: url(../img/svg/main-bg.svg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .img-sl {
+        width: 100%;
+        overflow: hidden;
+        /*sin el flex shrink nos encoje todo */
+        background-color: rgba(26, 25, 25, 0.466);
+        /*flex-shrink: 0; */
+    }
+    .item-sl {
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .item-sl>img {
+        display: block;
+        width: 100%;
+        margin: 1px;
+        padding: 2px;
+    }
+    /* fin contenido dinamico */
     /* slider */
+    .slider {
+        max-width: 100%;
+    }
     .slider base {
-        flex: auto;
+        display: block;
         z-index: 2;
-        height: auto;
+    }
+    .numero {
+        text-align: left;
+        background-color: rgba(253, 251, 251, 0.164);
+        padding-left: 1rem;
+    }
+    div .card-img-overlay {
+        max-height: 15%;
+    }
+    div .card-img-overlay img {
+        max-width: 30vw;
+    }
+    div .card {
+        max-width: inherit;
+        max-height: inherit;
+        text-align: center;
+    }
+    div .card-img {
+        display: flex;
+        max-height: 80vh;
+        vertical-align: middle;
+        justify-content: center;
     }
     .superponer {
         background-color: rgba(0, 0, 0, 0.521);
+        padding-top: 2rem;
+        padding-bottom: 1rem;
     }
     .slider .bg-dark {
         border-radius: 0;
@@ -161,6 +249,8 @@
         text-align: center;
     }
     .colash p {
+        display: flex;
+        max-width: 23%;
         color: rgba(0, 0, 0, 1);
         text-transform: uppercase;
         line-height: 1.8;
@@ -172,7 +262,10 @@
         font-style: normal;
     }
     .colash .sub-nav {
+        display: flex;
+        max-width: 100%;
         margin-top: 2rem;
+        margin-left: 3rem;
     }
     /* fin colash */
     /* footer */
@@ -187,17 +280,25 @@
         color: #F6F5F4;
     }
     .colash {
-        background-color: #F7E3DE;
-        padding-top: 1.5rem;
-    }
-    .colash nav {
+        display: flex;
+        justify-content: center;
         background-image: url(../img/gn/footer-sm.png);
         background-position: bottom;
         background-repeat: no-repeat;
-        background-position-x: center center;
+        background-position: center center;
+        background-size: cover;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        max-width: 100%;
+    }
+    .colash img {
+        margin-left: 1rem !important;
+    }
+    .colash nav {
         display: block;
         padding-bottom: 1.5rem;
     }
+    .bg-f {}
     /* fin colash */
     /*feedback*/
     .contenedor {
@@ -246,11 +347,6 @@
         margin-bottom: 1rem;
     }
     /* fin feedback */
-    img {
-        max-width: 100%;
-        margin: 0 !important;
-        border-radius: 0;
-    }
     .bn-sup {
         background-image: url("../img/ico/bn-sup.png");
         background-position-x: center;

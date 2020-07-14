@@ -2,7 +2,7 @@ html {
     background-color: rgba(0, 0, 0, 0.979);
 }
 
-@media only screen and (max-width: 769px) and (min-width:350px) {
+@media only screen and (max-width: 832px) and (min-width:350px) {
     html {
         margin: 0;
         padding: 0;
@@ -129,6 +129,44 @@ html {
         font-style: normal;
     }
     /* fin slider */
+    /*contenido dinamico */
+    .contenedor-medio {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .slider-contenedor {
+        max-width: 100%;
+        display: flex;
+    }
+    .contenido-slider {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        background-image: url(../img/svg/main-bg.svg);
+        background-position: center center;
+        background-size: cover;
+    }
+    .img-sl {
+        width: 100%;
+        overflow: hidden;
+        /*sin el flex shrink nos encoje todo */
+        background-color: rgba(26, 25, 25, 0.466);
+        /*flex-shrink: 0; */
+    }
+    .item-sl {
+        max-width: 100%;
+        max-height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .item-sl>img {
+        display: block;
+        max-width: 100%;
+        margin-right: 5px;
+        margin-left: 5px;
+        padding: 2px;
+    }
+    /* fin contenido dinamico */
     /* colash */
     .colash {
         display: block;

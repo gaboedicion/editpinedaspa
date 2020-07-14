@@ -67,16 +67,30 @@ window.addEventListener('load', function() {
     imgSlider[2] = 'img/slider/slider3.jpg';
     imgSlider[3] = 'img/slider/slider4.jpg';
 
+
     var indexImagen = 0;
+    var indexImagen1 = 3;
 
     function slider() {
         document.slider.src = imgSlider[indexImagen];
+
         if (indexImagen < 3) {
+            document.slider.src = imgSlider[indexImagen];
+
+
             indexImagen++;
+
+
         } else {
+
+
             indexImagen = 0;
         }
     }
+
+
+
     setInterval(slider, 1500);
+
 
 });
