@@ -131,40 +131,26 @@ html {
     /* fin slider */
     /*contenido dinamico */
     .contenedor-medio {
-        max-width: 100%;
-        overflow: hidden;
-    }
-    .slider-contenedor {
-        max-width: 100%;
-        display: flex;
-    }
-    .contenido-slider {
-        max-width: 100%;
-        display: flex;
-        align-items: center;
-        background-image: url(../img/svg/main-bg.svg);
-        background-position: center center;
-        background-size: cover;
-    }
-    .img-sl {
         width: 100%;
         overflow: hidden;
-        /*sin el flex shrink nos encoje todo */
-        background-color: rgba(26, 25, 25, 0.466);
-        /*flex-shrink: 0; */
     }
-    .item-sl {
-        max-width: 100%;
-        max-height: 100%;
+    .contenido-slider {
         display: flex;
-        align-items: center;
+        height: 100px;
+        justify-content: space-around;
     }
-    .item-sl>img {
+    .contenido-slider .item-sl {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        width: 400px;
+    }
+    .contenido-slider .item-sl img {
         display: block;
-        max-width: 100%;
-        margin-right: 5px;
-        margin-left: 5px;
-        padding: 2px;
+        width: 100%;
     }
     /* fin contenido dinamico */
     /* colash */

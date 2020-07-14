@@ -1,5 +1,5 @@
-let slider = document.querySelector(".item-sl ");
-let sliderIndividual = document.querySelectorAll(".item-sl img");
+let slider = document.querySelector(".contenido-slider");
+let sliderIndividual = document.querySelectorAll(".item-sl");
 let contador = 1;
 let width = sliderIndividual[0].clientWidth;
 let intervalo = 3000;
@@ -15,13 +15,13 @@ setInterval(function() {
 
 function slides() {
     slider.style.transform = "translate(" + (-width * contador) + "px)";
-    slider.style.transition = "transform .2s, , 0px, 0px";
+    slider.style.transition = "transform .7s";
     contador++;
 
     if (contador == sliderIndividual.length) {
         setTimeout(function() {
             slider.style.transform = "translate(0px)";
-            slider.style.transition = "transform .2s";
+            slider.style.transition = "transform .7s";
             contador = 1;
 
         }, 1500);

@@ -70,27 +70,27 @@ window.addEventListener('load', function() {
 
     var indexImagen = 0;
     var indexImagen1 = 3;
+    /*
+       function slider() {
+           document.slider.src = imgSlider[indexImagen];
 
-    function slider() {
-        document.slider.src = imgSlider[indexImagen];
-
-        if (indexImagen < 3) {
-            document.slider.src = imgSlider[indexImagen];
-
-
-            indexImagen++;
+           if (indexImagen < 3) {
+               document.slider.src = imgSlider[indexImagen];
 
 
-        } else {
+               indexImagen++;
 
 
-            indexImagen = 0;
-        }
-    }
+           } else {
+
+
+               indexImagen = 0;
+           }
+       }
 
 
 
-    setInterval(slider, 1500);
+       setInterval(slider, 1500); */
 
 
 });
