@@ -136,21 +136,17 @@ html {
     }
     .contenido-slider {
         display: flex;
-        height: 100px;
-        justify-content: space-around;
+        height: 100%;
     }
-    .contenido-slider .item-sl {
+    .contenido-slider {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: space-around;
-        width: 400px;
     }
-    .contenido-slider .item-sl img {
+    .contenido-slider>img {
         display: block;
         width: 100%;
+        margin-left: 3px !important;
+        margin-right: -2px !important;
     }
     /* fin contenido dinamico */
     /* colash */
