@@ -153,43 +153,21 @@
     }
     /*contenido dinamico */
     .contenedor-medio {
-        max-width: 100%;
-        overflow: hidden;
-    }
-    .slider-contenedor {
-        max-width: 100%;
         display: flex;
+        width: 100%;
+        overflow: hidden;
     }
     .contenido-slider {
         max-width: 100%;
         display: flex;
-        align-items: center;
-        background-image: url(../img/slider/slider2.jpg);
-        background-position: center center;
-        background-size: cover;
+        justify-content: space-between;
+        flex-shrink: 0;
     }
-    .contenido-slider>div {
-        max-width: 100%;
-        height: 100%;
-    }
-    .img-sl {
-        width: 100%;
-        overflow: hidden;
-        /*sin el flex shrink nos encoje todo */
-        background-color: rgba(26, 25, 25, 0.466);
-        /*flex-shrink: 0; */
-    }
-    .item-sl {
-        max-width: 100%;
-        max-height: 100%;
-        display: flex;
-        align-items: center;
-    }
-    .item-sl>img {
+    .contenido-slider>img {
         display: block;
-        width: 400px;
-        margin: 1px;
-        padding: 2px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 2px !important;
     }
     /* fin contenido dinamico */
     /* slider */
