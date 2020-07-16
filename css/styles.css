@@ -13,6 +13,7 @@ html {
     .about {
         display: flex;
         height: 1252px !important;
+        margin-bottom: auto;
     }
     .about .about-container {
         display: flex;
