@@ -40,20 +40,41 @@
     }
     .about {
         display: flex;
-        height: 80vh;
+        height: 97vh !important;
         flex-direction: row;
     }
     .about .about-container {
         display: flex;
-        max-width: 80%;
-        max-height: 100%;
-        margin-left: 20%;
-        margin-right: 20%;
+        max-width: 70%;
+        max-height: 80%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .about section {
+        display: inherit;
+    }
+    .about section>div:first-child {
+        flex-basis: 100%;
     }
     .about section p {
         max-width: 100%;
         font-weight: 600;
         font-size: 1.2rem;
+    }
+    .bio {
+        display: flex;
+        flex-direction: column;
+    }
+    .bio img {
+        width: 100%;
+        border-radius: 2px;
+    }
+    .bio h1 {
+        max-width: 100%;
+        font-size: 1rem;
+        color: rgba(80, 79, 79, 0.863);
+        font-weight: 300;
+        font-style: italic;
     }
     /* fin top */
     /* img main */
