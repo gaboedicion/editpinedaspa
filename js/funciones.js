@@ -16,6 +16,17 @@ function ocultar() {
 }
 
 
+let fecha = new Date();
+console.log(fecha.getFullYear());
+//let inputFecha = document.getElementById('fecha').innerHTML = "New One";
+
+document.getElementById("fecha").innerHTML = fecha.getFullYear();
+//let inFecha;
+//document.footer.innerHTML = fecha.getFullYear();
+
+//console.log(inputFecha);
+
+
 
 
 
