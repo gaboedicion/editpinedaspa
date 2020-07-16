@@ -12,7 +12,7 @@ html {
     }
     .about {
         display: flex;
-        height: 1052px !important;
+        height: 1252px !important;
     }
     .about .about-container {
         display: flex;
