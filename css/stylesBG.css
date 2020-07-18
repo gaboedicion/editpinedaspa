@@ -38,25 +38,26 @@
         padding: 0 !important;
         margin: 0 !important;
     }
-    .about {
+    .container .about {
         display: flex;
         height: 97vh !important;
         flex-direction: row;
     }
-    .about .about-container {
+    .about-container {
         display: flex;
-        max-width: 70%;
-        max-height: 80%;
-        margin-left: 15%;
-        margin-right: 15%;
+        max-height: 100%;
+        margin-bottom: 2rem;
     }
     .about section {
         display: inherit;
     }
+    .about-container section {
+        flex-basis: 100%;
+    }
     .about section>div:first-child {
         flex-basis: 100%;
     }
-    .about section p {
+    .about-container p {
         max-width: 100%;
         font-weight: 600;
         font-size: 1.2rem;
@@ -66,7 +67,8 @@
         flex-direction: column;
     }
     .bio img {
-        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
         border-radius: 2px;
     }
     .bio h1 {
