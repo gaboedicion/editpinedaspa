@@ -12,7 +12,7 @@ html {
     }
     .about {
         display: flex;
-        height: 1552px !important;
+        height: 1352px !important;
         margin-bottom: auto;
     }
     .about .about-container {
@@ -81,7 +81,7 @@ html {
         background-color: rgba(224, 200, 190, 0.5);
         display: flex;
         justify-content: center;
-        margin-top: 2rem;
+        margin-top: -2rem;
     }
     .simple nav {
         margin-top: 1rem;
@@ -109,6 +109,13 @@ html {
     .simple {
         background-color: rgba(224, 200, 190, 0.5);
     }
+    .simple section {
+        display: flex;
+        flex-basis: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .simple section .sub-pagina {}
     /*tarjetas medio */
     .card-body h5,
     .card-title .numero {
@@ -116,6 +123,16 @@ html {
         font-size: 3rem;
         font-weight: 700;
         color: rgba(10, 10, 10, 0.836);
+    }
+    .numero {
+        text-align: left;
+        background-color: rgba(253, 251, 251, 0.815);
+        padding-left: 1rem;
+        max-width: 50%;
+        border-radius: 3px;
+    }
+    .card-body P {
+        text-transform: uppercase;
     }
     /* slider */
     .slider base {

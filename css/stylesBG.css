@@ -26,8 +26,8 @@
         display: none;
     }
     header {
-        padding-bottom: 4rem;
-        height: 35vh;
+        /* padding-bottom: 4rem; */
+        max-height: 35vh;
     }
     .logo {
         max-width: 50%;
@@ -152,19 +152,26 @@
         width: 100vw;
         z-index: 999;
     }
+    .abs section {
+        display: flex;
+        flex-basis: 0%;
+        text-align: center;
+    }
+    .abs .sub-pagina h1 {
+        display: none;
+    }
     .simple nav {
         margin-top: 1rem;
         display: inline-block;
         max-width: 100%;
+        flex-basis: 100%;
     }
     .simple nav ul {
         display: flex;
         max-width: 100%;
+        justify-content: center;
         text-transform: uppercase;
         font-weight: 100;
-    }
-    .simple nav ul li:first-child {
-        margin-left: 2rem;
     }
     .simple nav ul li {
         margin-right: 2rem;
@@ -177,7 +184,7 @@
     .simple nav ul li a:hover {
         color: rgba(71, 71, 71, 0.836);
     }
-    .simple nav ul li .activo:active {
+    .simple nav ul li a .activo:active {
         color: rgb(255, 127, 249);
         background-color: rgb(99, 4, 56);
     }
@@ -198,6 +205,12 @@
         font-size: 3rem;
         font-weight: 700;
         color: rgba(10, 10, 10, 0.836);
+    }
+    .card-body P {
+        text-transform: uppercase;
+    }
+    .card-servicios {
+        text-transform: none !important;
     }
     /*contenido dinamico */
     .contenedor-medio {
@@ -228,8 +241,10 @@
     }
     .numero {
         text-align: left;
-        background-color: rgba(253, 251, 251, 0.164);
+        background-color: rgba(253, 251, 251, 0.815);
         padding-left: 1rem;
+        max-width: 50%;
+        border-radius: 3px;
     }
     div .card-img-overlay {
         max-height: 15%;
@@ -329,6 +344,9 @@
     }
     .colash img {
         margin-left: 1rem !important;
+    }
+    .colash img:last-child {
+        margin-top: 1px !important;
     }
     .colash nav {
         display: block;
